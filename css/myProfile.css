@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 25%;
+    float: left;
+    background-color: #040b14;
+    height: auto;
+    position: fixed;
+}
+.navSec {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 20px;
+}
+nav ul {
+    padding: 10px 5px; 
+    text-align: left;
+}
+nav ul li {
+    list-style-type: none;
+    display: block;
+    margin: 5px 10px;
+    font-size: 1em;
+}
+nav ul li a:link {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: white;
+}
+nav ul li a:hover {
+    font-weight: 800;
+    color: white;
+}
+nav ul li :active {
+    padding: 10px;
+    color: red;
+    font-weight: 800;
+}
+.navLogo {
+    border-radius: 50%;
+    width: 70%;
+    height: 160px;    
+    align-items: center;
+    border: 5px #173b6c solid
+
+}
+#navUl i {
+    color: white;
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+main {
+    width: 75%;
+    float: right;
+}
+.otherSec {
+    color: white;
+    margin: 20px 10px; 
+    padding-bottom: 50px;  
+}
+.otherSec i {
+    font-size: 1.5em;
+    margin: 10px;
+}
+.otherSec a:link {
+    color:white;
+    text-decoration: none;
+}
+.otherSec a:visited {
+    color:white;
+}
+.otherSec a:hover {
+    color: aqua;
+} 
+
+
+/* HOME */
+.homeMain {
+    width: 100%;
+    height: 670px;
+    position: relative;
+    background-image: url("../images/profile\ \(1\).jpg");
+    background-position-x: top;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: round;
+    z-index: 50;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 670px;
+    top: 0;
+    background-color: #040b14;
+    opacity: .9;
+    z-index: 10;
+}
+.but {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 400px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hireMe {
+    padding: 10px 30px;
+    background-color: #173b6c;
+    color: white;
+    display: inline;
+    margin-right: 20px;
+    font-size: .9rem;
+    z-index: 10;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.myResume {
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline;
+    border: 2px inset;
+    z-index: 10;
+    margin-top: 20px;
+}
+.myResume:link {
+    color: white;
+    background-color: #06061b;
+    cursor: pointer;
+}
+.myResume:visited {
+    color: white;   
+    background-color: #06061b;
+    cursor: pointer;
+}
+.myResume:hover {
+    background-color: #4ed4d4;
+    color: #06061b;
+}
+.hrLine {
+    color: #f6f6f6;
+}
+
+/* ABOUT US*/
+
+.abt {
+    margin: 50px;
+}
+.abtSec h2 {
+    font-size: 2rem;
+}
+#hrMed {
+    width: 40px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #173b6c;
+    border: #173b6c; 
+}
+.aboutSec {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px 5px grey;
+    margin: 50px auto 70px;
+    padding: 30px;
+    font-size: 1em;
+}
+.pd {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.aboutSec i {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+
+#Skills {
+    margin: 50px auto;
+    width: 90%;
+}
+.listSkill {
+    color: black;
+    padding: 30px 10px;
+}
+.listSkill::before {
+    animation: ease-in 6s linear 1s;
+}
+.listSkill p {
+    margin-bottom: 20px;
+}
+.listSkill i {
+    margin-right: 20px;
+}
+.guageSkill {
+    padding: 30px 10px;
+    background-color: #040b14;
+    color: white;
+}
+.meter {
+    height: 10px;
+    position: relative;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255,0.3);
+}
+.meter > span {
+    display: block;
+    height: 100%;
+    border-radius: 20px 8px 8px 20px;
+    background-color: #173b6c;
+    position: relative;
+    overflow: hidden;
+}
+.guageContext {
+    margin: 10px;
+}
+
+/* Experience */
+
+#Experience {
+    margin: 50px auto;
+    width: 90%;
+}
+.secExp {
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.secExpOne {
+    padding: 61px 0px;
+    width: 30%;
+    background-color: #173b6c;
+    float: left;
+    color: white;
+}
+.secExpOneB {
+    padding: 44.5px 0px;
+    width: 30%;
+    background-color: #173b6c;
+    float: left;
+    color: white;
+}
+.secExpOneC {
+    padding: 61px 0px;
+    width: 30%;
+    background-color: #173b6c;
+    float: left;
+    color: white;
+}
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+
+}
+.secExpTwo {
+    width: 68%;
+    float: left;
+    border: 5px solid #173b6c;
+
+}
+.secExpTwoB {
+    padding: 15px;
+}
+.secExpTwo i {
+    margin-right: 10px;
+}
+.secExpTwo p {
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+
+/* EDUCATION */
+
+#Education { 
+    margin: 50px auto;
+    width: 90%;
+}
+.secEdu {
+    margin: 70px 0;
+    border-radius: 10px;
+}
+.secEduOne {
+    padding: 18.5px 0px;
+    width: 30%;
+    background-color: #173b6c;
+    float: left;
+    color: white;
+}
+.secEduTwo {
+    width: 68%;
+    float: left;
+    border: 5px solid #173b6c;
+}
+.secEduTwoB {
+    padding:  22px 30px;
+    font-size: 1.2em;
+}
+
+/* CONTACT */
+
+#Contact {
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    float: left;
+}
+#fname, #phnum, #mail {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #173b6c;
+}
+.subSubmit {
+    padding: 5px 15px;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    background-color: #285f6f;
+    border-radius: 10px;
+    border: 5px double #285F6F;
+    color: white;
+    margin-bottom: 30px;
+}
+#male {
+    width: 30px;
+    margin-bottom: 30px;
+}
+textarea {
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid #173b6c;  
+}
+#add {
+    width: 50%;
+    float: right;
+    margin-top: 60px;
+
+}
+#add i {
+    margin: 10px 0;
+}
+
+/* GALLERY */
+#gallery {
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+}
+.gallery {
+    display: flex;
+}
+.gal {
+    width: 33%;
+    height: 300px;
+    
+}
+.gal:hover {
+    transform: scale(2, 1.5);
+    transition-duration: 3s;
+}
+.galOne {
+    width: 33%;
+    height: 300px;
+}
+.galOne:hover {
+    transform: skew(20deg, -10deg) skew(-20deg, -10deg);
+    transition-duration: 3s;
+
+}
+
+
+/* FOOTER*/
+
+footer {
+    margin-top: 50px;
+    background-color: #040b14;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-style: italic;
+}
