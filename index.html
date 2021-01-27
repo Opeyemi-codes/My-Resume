@@ -15,9 +15,8 @@
 
     </head>
     <body>
-    
     <nav>
-        <section class="navSec">
+        <section class="navSec" id="navi">
             <div class="n">
                 <img src="images/profile (3).jpg" class="navLogo">
             </div>
@@ -72,6 +71,11 @@
             </div>-->
         </section>
     </nav>
+    <div>
+        <p><i class="fas fa-bars menu" onclick="openNav(this)"></i></p>
+        <p><i a href="javascript:void(0)" class="fas fa-times cancel" onclick="closeNav(this)"></i></p>
+    </div>
+    <hr class="hrLine">
     <main>
         <div id="home"> 
             <section class="homeMain">
@@ -81,7 +85,7 @@
                         <p style="font-style:italic; margin-bottom: 10px;"> Web Developer(Intern), Human resources(intern), librarianship.</p>
                         <!--<p style="line-height: 1.5em; word-spacing: .5em;">Creative, hardworking and goal oriented gradute, skilled in professional cataloguing and classification of information materials, website development and archival of information resources. A resound graduate of library and information science, with knowledge of HTML and CSS and basic Knowledge of Javascript, yearning to build a strong, viable and dynamic career and attain professional distinction and proficiency in IT.</p>-->
                         <button type="button" value="#Contact" class="hireMe">Hire Me</button>
-                        <a class="myResume" href="ItResume.pdf" target="_blank" >Download Resume</a>
+                        <a class="myResume" href="ItResume.pdf" target="_blank" download>Download Resume</a>
                     </section>
                 </div>
             </section>
@@ -92,14 +96,13 @@
                 <hr id="hrMed">
                 <article class="aboutSec">
                     <h3 class="pd"> Personal Data</h3>
-                    <section style="float: left; width: 50%;">
+                    <section class="pdOne">
                         <p><i class="fas fa-angle-right"></i><strong>Date Of Birth: </strong>July 7, 1995.</p>
                         <p><i class="fas fa-angle-right"></i><strong>Gender: </strong>Male</p>
                         <p><i class="fas fa-angle-right"></i><strong>Marital Status: </strong>Single</p>
                         <p><i class="fas fa-angle-right"></i><strong>Religion: </strong>Islam</p>
-                        
                     </section>
-                    <section style="float: left; width: 50%;">
+                    <section class="pdTwo">
                         <p><i class="fas fa-angle-right"></i><strong>State Of Origin: </strong>Kwara State</p>
                         <p><i class="fas fa-angle-right"></i><strong>Local Govt. Of Origin: </strong>Ifelodun</p>
                         <p><i class="fas fa-angle-right"></i><strong>State Of Resident: </strong>Lagos State</p>
@@ -115,7 +118,7 @@
                 <h2>Skills</h2>
                 <hr id="hrMed">
                 <article class="listSkill">
-                    <h3 style="margin-bottom: 30px;">Skill Highlights</h3>
+                    <h3 class="sk">Skill Highlights</h3>
                     <p><i class="fas fa-angle-right"></i>Web designing using HTML and CSS to code.</p>
                     <p><i class="fas fa-angle-right"></i>Basic use of Javascript in completion of web functionalities.</p>
                     <p><i class="fas fa-angle-right"></i>Record, descriptive cataloguer, classifier and organizer of information.</p>
@@ -136,7 +139,7 @@
                     </div>
                     <p class="guageContext">JAVASCRIPT</p>
                     <div class="meter">
-                        <span style="width: 47%;"></span>
+                        <span style="width: 45%;"></span>
                     </div>
                 </aside>
                 <hr style="visibility: hidden; clear: both">
@@ -148,7 +151,7 @@
             <hr id="hrMed">
             <section class="secExp">
                 <div class="secExpOne">
-                    <p style="text-align: center; margin-bottom: 20px;">October 2019 - July 2020</p>
+                    <p class="expOne">October 2019 - July 2020</p>
                     <p class="title">Teacher</p>
                 </div>
                 <div class="secExpTwo">
@@ -232,23 +235,25 @@
         <hr class="hrLine">
             <div id="Contact">  
                 <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Full Name" id="fname" required>
-                    <input type="tel" placeholder="Phone Number" id="phnum">
-                    <input type="email" placeholder="Input your e-mail address" id="mail"><br/>
-                    <textarea name="Message" placeholder="Your Message" cols="43">
-
-                    </textarea> <br>
-                    <input type="submit" class="subSubmit" value="submit" style="margin-left: 20px; margin-top: 20px;"></button>
-                </form>
+                <hr id="hrMed">
+               
                 <address id="add">
                     <i class="fas fa-home"></i> <p> 132, Adetola Street, Aguda <br> Surulere, Lagos.</p>
                     <i class="fas fa-phone"></i> <p> +2348149491632, +2347089880280.</p>
                     <i class="fab fa-yahoo"></i><p>jolaiya@rocketmail.com</p>   
                     <i class="fab fa-google"></i><p>rilowantemitope@gmail.com</p>
                 </address>
+                <form>
+                    <input type="text" placeholder="Full Name" id="fname" required>
+                    <input type="tel" placeholder="Phone Number" id="phnum">
+                    <input type="email" placeholder="Input your e-mail address" id="mail"><br/>
+                    <textarea name="Message" placeholder="Your Message" style="width: 80%;">
+                    </textarea> <br>
+                    <input type="submit" class="subSubmit" value="submit" style="margin-left: 20px; margin-top: 30px;"></button>
+                </form>
             </div>
             <hr style="visibility: hidden; clear: both">
+            <hr class="hrLine">
             <div id="gallery">
                 <h2 class="galText"> Gallery</h2>
                 <div class="gallery">
@@ -266,11 +271,22 @@
         <footer>
             <div class="">
             <p> Jamiu Olaiya</p>
-            <i class="fa fa-copyright" aria-hidden="true"></i> 2020.
+            <i class="fa fa-copyright"></i> 2020.
 
             </div>
         </footer>
     </main>
-        <script src="" async defer></script>
+        
     </body>
+
+    <script>
+        function openNav() {
+            document.getElementById("navi").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("navi").style.display = "none";
+        }
+        
+    </script>
 </html>

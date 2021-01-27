@@ -2,44 +2,39 @@
     margin: 0;
     padding: 0;
 }
-nav {
+.navSec {
     width: 25%;
     float: left;
     background-color: #040b14;
-    height: auto;
+    height: 100%;
     position: fixed;
-}
-.navSec {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: 20;
     font-variant: small-caps;
     font-size: 1.2rem;
     padding: 5px;
-    margin-top: 20px;
 }
-nav ul {
+#navUl {
     padding: 10px 5px; 
     text-align: left;
 }
-nav ul li {
+#navUl li {
     list-style-type: none;
     display: block;
     margin: 5px 10px;
     font-size: 1em;
 }
-nav ul li a:link {
+#navUl li a:link {
     color: white;
     text-decoration: none;
 }
-nav ul li a:visited {
+#navUl li a:visited {
     color: white;
 }
-nav ul li a:hover {
+#navUl li a:hover {
     font-weight: 800;
     color: white;
 }
-nav ul li :active {
+#navUl li a:active {
     padding: 10px;
     color: red;
     font-weight: 800;
@@ -50,7 +45,6 @@ nav ul li :active {
     height: 160px;    
     align-items: center;
     border: 5px #173b6c solid
-
 }
 #navUl i {
     color: white;
@@ -58,6 +52,12 @@ nav ul li :active {
     margin-right: 20px;
     margin-top: 20px;
 }
+.menu, .cancel {
+    display: none;
+}
+
+
+/* MAIN DOC*/
 main {
     width: 75%;
     float: right;
@@ -81,8 +81,6 @@ main {
 .otherSec a:hover {
     color: aqua;
 } 
-
-
 /* HOME */
 .homeMain {
     width: 100%;
@@ -93,7 +91,7 @@ main {
     background-position-y: center;
     background-size: cover;
     background-repeat: round;
-    z-index: 50;
+    z-index: 5;
 }
 .overlay {
     position: absolute;
@@ -102,7 +100,7 @@ main {
     top: 0;
     background-color: #040b14;
     opacity: .9;
-    z-index: 10;
+    z-index: 7;
 }
 .but {
     width: 80%;
@@ -149,6 +147,18 @@ main {
     color: #f6f6f6;
 }
 
+@media screen and (max-width: 576px), (max-width: 768px) {
+    .hireMe, .myResume {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+    }
+}
+
 /* ABOUT US*/
 
 .abt {
@@ -174,17 +184,58 @@ main {
     font-size: 1em;
 }
 .pd {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 30px;
     text-align: center;
+}
+.pdOne {
+    float: left; 
+    width: 50%;
+}
+.pdTwo {
+    float: left; 
+    width: 48%;
 }
 .aboutSec i {
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-/* SKILLS */
+@media screen and (max-width: 576px),(max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+    .aboutSec {
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    .pdOne, .pdTwo {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hrMed {
+        width: 100%;
+    }
+    .listSkill {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sk {
+        text-align: center;
+    }
+    .guageSkill {
+        border-radius: 30px;
+    }
+}
 
+
+/* SKILLS */
+.sk {
+    margin-bottom: 30px;
+}
 #Skills {
     margin: 50px auto;
     width: 90%;
@@ -210,7 +261,7 @@ main {
 .meter {
     height: 10px;
     position: relative;
-    background: white;
+    background-color: white;
     border-radius: 25px;
     padding: 10px;
     box-shadow: inset 0 -1px 1px rgba(255, 255, 255,0.3);
@@ -281,6 +332,36 @@ main {
     font-size: .8em;
 }
 
+@media screen and (max-width: 567px), (max-width: 768px) {
+    .secExpOne {
+        width: 70%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .secExpTwo {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .secExpOneB {
+        width: 70%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .secExpOneC {
+        width: 70%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
 /* EDUCATION */
 
 #Education { 
@@ -307,15 +388,35 @@ main {
     padding:  22px 30px;
     font-size: 1.2em;
 }
+.expOne {
+    text-align: center; 
+    margin-bottom: 20px;
+}
 
+@media screen and (max-width: 567px), (max-width: 768px) {
+    .secEduOne {
+        width: 70%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .secEduTwo {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        float: none;
+    }
+}
 /* CONTACT */
 
 #Contact {
     margin: 50px auto;
     width: 90%;
-    text-align: center;
+    
 }
-form{
+form {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -325,10 +426,10 @@ form{
 #fname, #phnum, #mail {
     width: 80%;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     border: none;
-    border-bottom: 2px solid #173b6c;
+    border-bottom: 3px solid #173b6c;
 }
 .subSubmit {
     padding: 5px 15px;
@@ -354,7 +455,9 @@ textarea {
 #add {
     width: 50%;
     float: right;
-    margin-top: 60px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2em;
 
 }
 #add i {
@@ -402,4 +505,72 @@ footer {
     text-align: center;
     padding: 30px 0;
     font-style: italic;
+}
+
+/* MEDIA QUERRY */
+
+@media screen and (max-width: 576px), (max-width: 768px) {
+    main { 
+        width: 100%;
+        padding: 0 10px;
+        z-index: 2;
+    }
+    .navSec {
+        width: 160px;
+        display: none;
+        height: 100%;
+        position: fixed;
+        z-index: 0;
+        background-color: #040b14;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+    }
+    .navSec .cancel {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    .otherSec {
+        display: block;
+    }
+    .n {
+        display: none;  
+    }
+    .menu, .cancel {
+        color: red;
+        font-size: 2em;
+        display: block;
+    }
+    .cancel {
+        top: 20px;
+        right: 25px;
+        margin-left: 200px;
+        position: absolute;
+    }
+    .menu {
+        position: fixed;
+        top: 20px;
+        right: 50px;
+        z-index: 100;
+    }
+    form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    #add {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        }
+    footer {
+        margin-bottom: 0;
+    }
 }
