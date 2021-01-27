@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Jamiu Olaiya Profile</title>
-        <meta name="description" content="Resume">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!--Font Awesome-->
-        <link type="text/css" rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.min.css">
 
-        <!--My style-->
-        <link rel="stylesheet" href="css/myProfile.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jamiu Olaiya Profile</title>
+    <meta name="description" content="Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-    <body>
+    <!--Font Awesome-->
+    <link type="text/css" rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.min.css">
+
+    <!--My style-->
+    <link rel="stylesheet" href="css/myProfile.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
     <nav>
         <section class="navSec" id="navi">
             <div class="n">
@@ -26,7 +29,7 @@
                 <li><a href="#Skills"><i class="fas fa-wrench"></i>skills</a></li>
                 <li><a href="#Experience"><i class="fas fa-briefcase"></i>experience</a></li>
                 <li><a href="#Education"><i class="fas fa-user-graduate"></i>education</a></li>
-                <li><a href="#Contact"><i class="fas fa-id-card"></i>contant</a></li> 
+                <li><a href="#Contact"><i class="fas fa-id-card"></i>contant</a></li>
             </ul>
             <div class="otherSec">
                 <a href="#">
@@ -53,31 +56,60 @@
                 <a href="#">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                
+
             </div>
-            <!-- <div class="otherSec">
-                <h3 style="text-decoration: underline; color:#173b6c; padding-bottom: 10px; ">Hobbies</h3>
-                <p>Travel</p>
-                <p>Sport</p>
-                <p>Music</p>
-                <p>Photography</p>
-                <p>Design</p>
+
+        </section>
+
+        <section class="nav">
+            <div class="n">
+                <img src="images/profile (3).jpg" class="navLogo">
             </div>
+            <ul id="navUl">
+                <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#About"><i class="fas fa-user-alt"></i>about</a></li>
+                <li><a href="#Skills"><i class="fas fa-wrench"></i>skills</a></li>
+                <li><a href="#Experience"><i class="fas fa-briefcase"></i>experience</a></li>
+                <li><a href="#Education"><i class="fas fa-user-graduate"></i>education</a></li>
+                <li><a href="#Contact"><i class="fas fa-id-card"></i>contant</a></li>
+            </ul>
             <div class="otherSec">
-                <h3 style="text-decoration: underline; color:aqua;">Extra Curriculum Activities</h3>
-                <p>Clearance Liason Officer (N.Y.S.C.)</p>
-                <p>Financial Secretary (N.A.L.I.S.S.)</p>
-                <p>Sport Director (N.A.L.I.S.S.)</p>
-            </div>-->
+                <a href="#">
+                    <i class="fab fa-facebook-messenger"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-slack"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+
         </section>
     </nav>
     <div>
-        <p><i class="fas fa-bars menu" onclick="openNav(this)"></i></p>
-        <p><i a href="javascript:void(0)" class="fas fa-times cancel" onclick="closeNav(this)"></i></p>
+        <div id="menu"><i class="fas fa-bars menu"></i></div>
+        <div id="close"><i class="fas fa-times cancel"></i></div>
     </div>
     <hr class="hrLine">
     <main>
-        <div id="home"> 
+        <div id="home">
             <section class="homeMain">
                 <div class="overlay">
                     <section class="but">
@@ -90,7 +122,7 @@
                 </div>
             </section>
         </div>
-        <div id="About" class="abt"> 
+        <div id="About" class="abt">
             <section>
                 <h2>About</h2>
                 <hr id="hrMed">
@@ -113,7 +145,7 @@
             </section>
         </div>
         <hr class="hrLine">
-        <div id="Skills"> 
+        <div id="Skills">
             <section>
                 <h2>Skills</h2>
                 <hr id="hrMed">
@@ -146,7 +178,7 @@
             </section>
         </div>
         <hr class="hrLine">
-        <div id="Experience"> 
+        <div id="Experience">
             <h2>Experience</h2>
             <hr id="hrMed">
             <section class="secExp">
@@ -203,8 +235,8 @@
         </div>
         <hr class="hrLine">
         <div id="Education">
-                <h2>Education</h2>
-                <hr id="hrMed">
+            <h2>Education</h2>
+            <hr id="hrMed">
             <section class="secEdu">
                 <div class="secEduOne">
                     <p style="text-align: center; margin-bottom: 20px;">2014-2019</p>
@@ -233,60 +265,50 @@
             <hr style="visibility: hidden; clear: both">
         </div>
         <hr class="hrLine">
-            <div id="Contact">  
-                <h2>Contact Us</h2>
-                <hr id="hrMed">
-               
-                <address id="add">
+        <div id="Contact">
+            <h2>Contact Us</h2>
+            <hr id="hrMed">
+
+            <address id="add">
                     <i class="fas fa-home"></i> <p> 132, Adetola Street, Aguda <br> Surulere, Lagos.</p>
                     <i class="fas fa-phone"></i> <p> +2348149491632, +2347089880280.</p>
                     <i class="fab fa-yahoo"></i><p>jolaiya@rocketmail.com</p>   
                     <i class="fab fa-google"></i><p>rilowantemitope@gmail.com</p>
                 </address>
-                <form>
-                    <input type="text" placeholder="Full Name" id="fname" required>
-                    <input type="tel" placeholder="Phone Number" id="phnum">
-                    <input type="email" placeholder="Input your e-mail address" id="mail"><br/>
-                    <textarea name="Message" placeholder="Your Message" style="width: 80%;">
+            <form>
+                <input type="text" placeholder="Full Name" id="fname" required>
+                <input type="tel" placeholder="Phone Number" id="phnum">
+                <input type="email" placeholder="Input your e-mail address" id="mail"><br/>
+                <textarea name="Message" placeholder="Your Message" style="width: 80%;">
                     </textarea> <br>
-                    <input type="submit" class="subSubmit" value="submit" style="margin-left: 20px; margin-top: 30px;"></button>
-                </form>
+                <input type="submit" class="subSubmit" value="submit" style="margin-left: 20px; margin-top: 30px;"></button>
+            </form>
+        </div>
+        <hr style="visibility: hidden; clear: both">
+        <hr class="hrLine">
+        <div id="gallery">
+            <h2 class="galText"> Gallery</h2>
+            <div class="gallery">
+                <img src="images/pic.jpg" class="gal">
+                <img src="images/profile (4).jpg" class="galOne">
+                <img src="images/profile (5).jpg" class="gal">
             </div>
-            <hr style="visibility: hidden; clear: both">
-            <hr class="hrLine">
-            <div id="gallery">
-                <h2 class="galText"> Gallery</h2>
-                <div class="gallery">
-                    <img src="images/pic.jpg" class="gal">
-                    <img src="images/profile (4).jpg" class="galOne">
-                    <img src="images/profile (5).jpg" class="gal">
-                </div>
-                <div class="gallery">
-                    <img src="images/profile (7).jpg" class="galOne">
-                    <img src="images/picss.jpg" class="gal">
-                    <img src="images/carnival.jpg" class="galOne">
-                </div>
+            <div class="gallery">
+                <img src="images/profile (7).jpg" class="galOne">
+                <img src="images/picss.jpg" class="gal">
+                <img src="images/carnival.jpg" class="galOne">
+            </div>
 
-            </div>
+        </div>
         <footer>
             <div class="">
-            <p> Jamiu Olaiya</p>
-            <i class="fa fa-copyright"></i> 2020.
+                <p> Jamiu Olaiya</p>
+                <i class="fa fa-copyright"></i> 2020.
 
             </div>
         </footer>
     </main>
-        
-    </body>
 
-    <script>
-        function openNav() {
-            document.getElementById("navi").style.display = "block";
-        }
+</body>
 
-        function closeNav() {
-            document.getElementById("navi").style.display = "none";
-        }
-        
-    </script>
 </html>
