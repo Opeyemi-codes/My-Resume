@@ -2,97 +2,127 @@
     margin: 0;
     padding: 0;
 }
+
 .navSec {
     width: 25%;
     float: left;
     background-color: #040b14;
     height: 100%;
     position: fixed;
-    z-index: 20;
     font-variant: small-caps;
     font-size: 1.2rem;
-    padding: 5px;
+    padding: 0 5px;
+    margin: 0;
 }
+
+.nav {
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
 #navUl {
-    padding: 10px 5px; 
+    padding: 10px 5px;
     text-align: left;
 }
+
 #navUl li {
     list-style-type: none;
     display: block;
     margin: 5px 10px;
     font-size: 1em;
 }
+
 #navUl li a:link {
     color: white;
     text-decoration: none;
 }
+
 #navUl li a:visited {
     color: white;
 }
+
 #navUl li a:hover {
     font-weight: 800;
     color: white;
 }
+
 #navUl li a:active {
     padding: 10px;
     color: red;
     font-weight: 800;
 }
+
 .navLogo {
     border-radius: 50%;
     width: 70%;
-    height: 160px;    
+    height: 160px;
     align-items: center;
     border: 5px #173b6c solid
 }
+
 #navUl i {
     color: white;
     font-size: 1rem;
     margin-right: 20px;
     margin-top: 20px;
 }
-.menu, .cancel {
+
+.menu,
+.cancel {
     display: none;
 }
 
 
 /* MAIN DOC*/
+
 main {
     width: 75%;
     float: right;
 }
+
 .otherSec {
     color: white;
-    margin: 20px 10px; 
-    padding-bottom: 50px;  
+    margin: 20px 10px;
+    padding-bottom: 50px;
 }
+
 .otherSec i {
     font-size: 1.5em;
     margin: 10px;
 }
+
 .otherSec a:link {
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
 .otherSec a:visited {
-    color:white;
+    color: white;
 }
+
 .otherSec a:hover {
     color: aqua;
-} 
+}
+
+
 /* HOME */
+
 .homeMain {
     width: 100%;
-    height: 670px;
-    position: relative;
+    height: 100vh;
     background-image: url("../images/profile\ \(1\).jpg");
     background-position-x: top;
     background-position-y: center;
     background-size: cover;
-    background-repeat: round;
-    z-index: 5;
+    background-repeat: no-repeat;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
 }
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -100,16 +130,17 @@ main {
     top: 0;
     background-color: #040b14;
     opacity: .9;
-    z-index: 7;
 }
+
 .but {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    padding-top: 400px;
+    padding-top: 300px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .hireMe {
     padding: 10px 30px;
     background-color: #173b6c;
@@ -121,6 +152,7 @@ main {
     margin-top: 20px;
     font-weight: 800;
 }
+
 .myResume {
     padding: 10px 30px;
     text-decoration: none;
@@ -129,26 +161,32 @@ main {
     z-index: 10;
     margin-top: 20px;
 }
+
 .myResume:link {
     color: white;
     background-color: #06061b;
     cursor: pointer;
 }
+
 .myResume:visited {
-    color: white;   
+    color: white;
     background-color: #06061b;
     cursor: pointer;
 }
+
 .myResume:hover {
     background-color: #4ed4d4;
     color: #06061b;
 }
+
 .hrLine {
     color: #f6f6f6;
 }
 
-@media screen and (max-width: 576px), (max-width: 768px) {
-    .hireMe, .myResume {
+@media screen and (max-width: 576px),
+(max-width: 768px) {
+    .hireMe,
+    .myResume {
         display: block;
         text-align: center;
         padding: 10px;
@@ -156,25 +194,28 @@ main {
         margin-left: auto;
         margin-right: auto;
         border-radius: 50px;
-        
     }
 }
+
 
 /* ABOUT US*/
 
 .abt {
     margin: 50px;
 }
+
 .abtSec h2 {
     font-size: 2rem;
 }
+
 #hrMed {
     width: 40px;
     height: 5px;
     border-radius: 20px;
     background-color: #173b6c;
-    border: #173b6c; 
+    border: #173b6c;
 }
+
 .aboutSec {
     width: 90%;
     margin-left: auto;
@@ -184,25 +225,30 @@ main {
     padding: 30px;
     font-size: 1em;
 }
+
 .pd {
     font-size: 1.3em;
     margin-bottom: 30px;
     text-align: center;
 }
+
 .pdOne {
-    float: left; 
+    float: left;
     width: 50%;
 }
+
 .pdTwo {
-    float: left; 
+    float: left;
     width: 48%;
 }
+
 .aboutSec i {
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 576px),(max-width: 768px) {
+@media screen and (max-width: 576px),
+(max-width: 768px) {
     h2 {
         text-align: center;
     }
@@ -210,7 +256,8 @@ main {
         box-shadow: none;
         margin-top: 10px;
     }
-    .pdOne, .pdTwo {
+    .pdOne,
+    .pdTwo {
         display: block;
         width: 100%;
         margin-left: auto;
@@ -234,40 +281,49 @@ main {
 
 
 /* SKILLS */
+
 .sk {
     margin-bottom: 30px;
 }
+
 #Skills {
     margin: 50px auto;
     width: 90%;
 }
+
 .listSkill {
     color: black;
     padding: 30px 10px;
 }
+
 .listSkill::before {
     animation: ease-in 6s linear 1s;
 }
+
 .listSkill p {
     margin-bottom: 20px;
 }
+
 .listSkill i {
     margin-right: 20px;
 }
+
 .guageSkill {
     padding: 30px 10px;
     background-color: #040b14;
     color: white;
 }
+
 .meter {
     height: 10px;
     position: relative;
     background-color: white;
     border-radius: 25px;
     padding: 10px;
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
-.meter > span {
+
+.meter>span {
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
@@ -275,9 +331,11 @@ main {
     position: relative;
     overflow: hidden;
 }
+
 .guageContext {
     margin: 10px;
 }
+
 
 /* Experience */
 
@@ -285,10 +343,12 @@ main {
     margin: 50px auto;
     width: 90%;
 }
+
 .secExp {
     margin: 30px auto;
     border-radius: 10px;
 }
+
 .secExpOne {
     padding: 61px 0px;
     width: 30%;
@@ -296,6 +356,7 @@ main {
     float: left;
     color: white;
 }
+
 .secExpOneB {
     padding: 44.5px 0px;
     width: 30%;
@@ -303,6 +364,7 @@ main {
     float: left;
     color: white;
 }
+
 .secExpOneC {
     padding: 61px 0px;
     width: 30%;
@@ -310,30 +372,34 @@ main {
     float: left;
     color: white;
 }
+
 .title {
     font-size: 1.5em;
     text-align: center;
     font-family: cursive;
-
 }
+
 .secExpTwo {
     width: 68%;
     float: left;
     border: 5px solid #173b6c;
-
 }
+
 .secExpTwoB {
     padding: 15px;
 }
+
 .secExpTwo i {
     margin-right: 10px;
 }
+
 .secExpTwo p {
     margin-bottom: 10px;
     font-size: .8em;
 }
 
-@media screen and (max-width: 567px), (max-width: 768px) {
+@media screen and (max-width: 567px),
+(max-width: 768px) {
     .secExpOne {
         width: 70%;
         padding: 10px 0;
@@ -363,16 +429,19 @@ main {
     }
 }
 
+
 /* EDUCATION */
 
-#Education { 
+#Education {
     margin: 50px auto;
     width: 90%;
 }
+
 .secEdu {
     margin: 50px 0;
     border-radius: 10px;
 }
+
 .secEduOne {
     padding: 18.5px 0px;
     width: 30%;
@@ -380,21 +449,25 @@ main {
     float: left;
     color: white;
 }
+
 .secEduTwo {
     width: 68%;
     float: left;
     border: 5px solid #173b6c;
 }
+
 .secEduTwoB {
-    padding:  22px 30px;
+    padding: 22px 30px;
     font-size: 1.2em;
 }
+
 .expOne {
-    text-align: center; 
+    text-align: center;
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 567px), (max-width: 768px) {
+@media screen and (max-width: 567px),
+(max-width: 768px) {
     .secEduOne {
         width: 70%;
         padding: 10px 0;
@@ -410,13 +483,15 @@ main {
         float: none;
     }
 }
+
+
 /* CONTACT */
 
 #Contact {
     margin: 50px auto;
     width: 90%;
-    
 }
+
 form {
     width: 50%;
     margin-left: auto;
@@ -424,7 +499,10 @@ form {
     margin-top: 20px;
     float: left;
 }
-#fname, #phnum, #mail {
+
+#fname,
+#phnum,
+#mail {
     width: 80%;
     padding: 10px 20px;
     border-radius: 20px;
@@ -432,6 +510,7 @@ form {
     border: none;
     border-bottom: 3px solid #173b6c;
 }
+
 .subSubmit {
     padding: 5px 15px;
     font-variant: small-caps;
@@ -442,55 +521,65 @@ form {
     color: white;
     margin-bottom: 30px;
 }
+
 #male {
     width: 30px;
     margin-bottom: 30px;
 }
+
 textarea {
     border-radius: 10px;
     padding: 20px;
     margin-left: 10px;
     border: none;
-    border-bottom: 2px solid #173b6c;  
+    border-bottom: 2px solid #173b6c;
 }
+
 #add {
     width: 50%;
     float: right;
     margin-top: 40px;
     text-align: center;
     font-size: 1.2em;
-
 }
+
 #add i {
     margin: 10px 0;
 }
 
+
 /* GALLERY */
+
 #gallery {
     width: 90%;
     text-align: center;
     margin: 50px auto;
 }
+
 .gallery {
     display: flex;
 }
+
 .gal {
     width: 33%;
     height: 300px;
-    
 }
+
 .gal:hover {
     transform: scale(1.5, 1.5);
     transition-duration: 3s;
 }
+
 .galOne {
     width: 33%;
     height: 300px;
 }
+
 .galOne:hover {
     transform: skew(20deg, -10deg) skew(-20deg, -10deg);
     transition-duration: 3s;
 }
+
 .galText {
     margin-bottom: 50px;
     font-size: 2em;
@@ -508,54 +597,68 @@ footer {
     font-style: italic;
 }
 
+
 /* MEDIA QUERRY */
 
-@media screen and (max-width: 576px), (max-width: 768px) {
-    main { 
+@media screen and (max-width: 576px),
+(max-width: 768px) {
+    main {
         width: 100%;
         padding: 0 10px;
         z-index: 2;
     }
     .navSec {
+        display: none;
+        height: 0;
+    }
+    .nav {
         width: 160px;
         display: none;
         height: 100%;
         position: fixed;
-        z-index: 0;
+        z-index: 2;
         background-color: #040b14;
         top: 0;
         left: 0;
         overflow-x: hidden;
     }
-    .navSec .cancel {
+    /* .navSec .cancel {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
         margin-left: 10px;
-    }
+    } */
     .otherSec {
         display: block;
     }
     .n {
-        display: none;  
-    }
-    .menu, .cancel {
-        color: red;
-        font-size: 2em;
-        display: block;
-    }
-    .cancel {
-        top: 20px;
-        right: 25px;
-        margin-left: 200px;
-        position: absolute;
+        display: none;
     }
     .menu {
+        background-color: white;
+        color: red;
+        padding: 5px;
+        font-size: 1.2em;
+        display: block;
         position: fixed;
         top: 20px;
         right: 50px;
-        z-index: 100;
+        z-index: 2;
+        border-radius: 5px;
+    }
+    .cancel {
+        position: fixed;
+        background-color: white;
+        color: red;
+        padding: 5px;
+        font-size: 1.2em;
+        display: none;
+        top: 20px;
+        right: 50px;
+        margin-left: 200px;
+        z-index: 2;
+        border-radius: 5px;
     }
     form {
         width: 80%;
@@ -570,7 +673,7 @@ footer {
         float: none;
         margin-top: 40px;
         margin-bottom: 40px;
-        }
+    }
     footer {
         margin-bottom: 0;
     }
