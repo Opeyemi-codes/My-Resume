@@ -89,14 +89,8 @@ main {
 
 .otherSec {
     color: white;
-<<<<<<< HEAD
-    margin: 20px 10px; 
-    padding-bottom: 50px; 
-
-=======
     margin: 20px 10px;
     padding-bottom: 50px;
->>>>>>> d4006327fd5a9509a8656bea972fc947d9c04e91
 }
 
 .otherSec i {
@@ -639,11 +633,7 @@ footer {
         display: none;
         height: 100%;
         position: fixed;
-<<<<<<< HEAD
-        z-index: 100;
-=======
         z-index: 2;
->>>>>>> d4006327fd5a9509a8656bea972fc947d9c04e91
         background-color: #040b14;
         top: 0;
         left: 0;
